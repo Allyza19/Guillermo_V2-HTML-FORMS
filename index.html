@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Order Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <img href="#" class="image"> 
+        <img src="Logo.png" height="80" align="left">
+        <h1>Taste of Ally</h1>
+        <p>Foods & Drinks</p>
+        <form action="#" method="POST" class="order-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="address">Address:</label>
+            <input type="address" id="address" name="address" required>
+
+            <div id="dropdown">
+                <button class="dropdown-toggle">
+                    <span>Menu</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Italian</a></li>
+                    <li class="menu-item"><a href="#">Chinese</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="submenu-toggle">
+                            <span>Healthy Options</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                            <li class="submenu-item"><a href="#">Vegan</a></li>
+                            <li class="submenu-item"><a href="#">Gluten-Free</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">Mexican</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="submenu-toggle">
+                            <span>Specials</span>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Quesadilla</a></li>
+                            <li class="submenu-item"><a href="#">Beef Tacos</a></li>
+                            <li class="submenu-item"><a href="#">Tamales</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <label for="payment">Mode of Payment:</label>
+            <select id="payment" name="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+
+            </select>
+
+            <label for="dine-option">Dine-in / Take-out:</label>
+            <select id="dine-option" name="dine-option" required>
+                <option value="">Select Option</option>
+                <option value="dine-in">Dine-in</option>
+                <option value="take-out">Take-out</option>
+            </select>
+
+            <label for="comments">Comments/Instructions:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <div class="button-container">
+                <button type="submit" name="submit">Order Placed</button>
+                <button type="button" name="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>    
+    <script src='script.js'></script>
+</body>
+</html>
